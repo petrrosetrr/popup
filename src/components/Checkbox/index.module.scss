@@ -1,0 +1,43 @@
+
+.main {
+  .input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+  .label {
+    position: relative;
+    padding-left: 31px;
+    font-size: 14px;
+    line-height: 24px;
+    color: black;
+    transition: all .2s linear;
+    cursor: pointer;
+    .hint {
+      color: #808080;
+    }
+    &::before {
+      transition: all .2s linear;
+      position: absolute;
+      content: "";
+      display: block;
+      width: 20px;
+      height: 20px;
+      border: 1px solid #DFE3E6;
+      border-radius: 6px;
+    }
+    &:hover::before {
+      border: 1px solid #000000;
+    }
+  }
+  .input:checked + .label {
+
+    &::before {
+      border: none;
+      background-color: #FF5E56;
+      background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.5 6C0.5 2.96243 2.96243 0.5 6 0.5H14C17.0376 0.5 19.5 2.96243 19.5 6V14C19.5 17.0376 17.0376 19.5 14 19.5H6C2.96243 19.5 0.5 17.0376 0.5 14V6Z' fill='%23FF5E56'/%3E%3Cpath d='M0.5 6C0.5 2.96243 2.96243 0.5 6 0.5H14C17.0376 0.5 19.5 2.96243 19.5 6V14C19.5 17.0376 17.0376 19.5 14 19.5H6C2.96243 19.5 0.5 17.0376 0.5 14V6Z' fill='url(%23paint0_linear_2:32)'/%3E%3Cpath d='M0.5 6C0.5 2.96243 2.96243 0.5 6 0.5H14C17.0376 0.5 19.5 2.96243 19.5 6V14C19.5 17.0376 17.0376 19.5 14 19.5H6C2.96243 19.5 0.5 17.0376 0.5 14V6Z' stroke='%23FF5E56'/%3E%3Cpath d='M0.5 6C0.5 2.96243 2.96243 0.5 6 0.5H14C17.0376 0.5 19.5 2.96243 19.5 6V14C19.5 17.0376 17.0376 19.5 14 19.5H6C2.96243 19.5 0.5 17.0376 0.5 14V6Z' stroke='url(%23paint1_linear_2:32)'/%3E%3Cpath d='M7.45455 13.7015L4.11364 10.2537L3 11.403L7.45455 16L17 6.14925L15.8864 5L7.45455 13.7015Z' fill='white'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_2:32' x1='20' y1='0.798563' x2='-7.38102' y2='7.95678' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23DC3131'/%3E%3Cstop offset='0.932292' stop-color='%23FF4F4F' stop-opacity='0'/%3E%3C/linearGradient%3E%3ClinearGradient id='paint1_linear_2:32' x1='20' y1='0.798563' x2='-7.38102' y2='7.95678' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23DC3131'/%3E%3Cstop offset='0.932292' stop-color='%23FF4F4F' stop-opacity='0'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E");
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+}

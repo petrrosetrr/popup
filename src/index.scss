@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  min-width: 320px;
+}
+
+*, *::before, *::after {
+  outline: none;
+  box-sizing: border-box;
+}
