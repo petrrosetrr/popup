@@ -2,6 +2,7 @@
   "name": "popup",
   "version": "0.1.0",
   "private": true,
+  "homepage": "/popup/",
   "dependencies": {
     "@types/node": "^12.20.33",
     "@types/react": "^17.0.30",

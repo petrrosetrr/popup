@@ -1,4 +1,4 @@
-import React, {ChangeEvent, useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import Modal from '../Modal';
 import styles from './index.module.scss';
 import {ReactComponent as Close} from '../assets/close.svg';
